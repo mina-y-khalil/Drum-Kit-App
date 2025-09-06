@@ -90,3 +90,15 @@ img {
   height: 300px;
   margin-top: 50px;
 }
+
+
+footer {
+  font-family: 'Arvo', cursive;
+  
+}
+
+footer a {
+  color: white;
+  /* text-decoration: none; */
+}
+
