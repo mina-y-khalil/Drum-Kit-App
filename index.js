@@ -7,6 +7,7 @@ for (const button of buttons) {
     button.addEventListener('click', ()=> {       
         const key = button.innerHTML;
         makeSound(key);
+        buttonAnimation(key);
         
     })
 }
@@ -14,6 +15,7 @@ for (const button of buttons) {
 // Detecting keyboard press
 document.addEventListener('keydown', (event) => {
     makeSound(event.key);
+    buttonAnimation(event.key);
 });
 
 
@@ -60,3 +62,12 @@ function makeSound (key) {
 
 
 
+
+function buttonAnimation(currentKey){
+    const activeButton = document.querySelector(`.${currentKey}`);
+    activeButton.classList.add("pressed");
+    setTimeout(() => {
+        activeButton.classList.remove("pressed");
+    }, 100);
+
+}
