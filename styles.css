@@ -108,3 +108,17 @@ footer a {
   /* text-decoration: none; */
 }
 
+.drum-info {
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.drum-link {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+.drum-link:hover {
+  color: #ffaa00;
+}
